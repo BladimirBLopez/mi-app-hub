@@ -4,8 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 export default function ProjectCard({ project }) {
   return (
     <div className="glass rounded-2xl overflow-hidden group transition-all duration-300">
-      {/* Imagen */}
-      <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20 overflow-hidden">
+      <div className="relative h-48 bg-gradient-to-br from-[#6366f1]/20 to-[#8b5cf6]/20 overflow-hidden">
         {project.image ? (
           <img 
             src={project.image} 
@@ -19,15 +18,14 @@ export default function ProjectCard({ project }) {
         )}
         
         {project.featured && (
-          <span className="absolute top-3 right-3 px-3 py-1 bg-primary text-xs font-bold rounded-full">
+          <span className="absolute top-3 right-3 px-3 py-1 bg-[#6366f1] text-xs font-bold rounded-full">
             DESTACADO
           </span>
         )}
       </div>
 
-      {/* Contenido */}
       <div className="p-6">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition">
+        <h3 className="text-xl font-bold mb-2 group-hover:text-[#6366f1] transition">
           {project.title}
         </h3>
         
@@ -39,7 +37,7 @@ export default function ProjectCard({ project }) {
           {project.tags.map((tag, index) => (
             <span 
               key={index}
-              className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full border border-primary/20"
+              className="px-2 py-1 bg-[#6366f1]/10 text-[#6366f1] text-xs rounded-full border border-[#6366f1]/20"
             >
               {tag}
             </span>
@@ -51,7 +49,7 @@ export default function ProjectCard({ project }) {
             href={project.demoUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 px-4 py-2 bg-primary hover:bg-secondary rounded-lg text-sm font-semibold transition flex items-center justify-center gap-2"
+            className="flex-1 px-4 py-2 bg-[#6366f1] hover:bg-[#8b5cf6] rounded-lg text-sm font-semibold transition flex items-center justify-center gap-2"
           >
             <FaExternalLinkAlt /> Demo
           </a>

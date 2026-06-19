@@ -8,7 +8,7 @@ export default function Footer() {
           © 2025 AppHub. Todos los derechos reservados.
         </p>
         <p className="text-gray-400 text-sm flex items-center gap-1">
-          Hecho con <FaHeart className="text-primary" /> desde cualquier lugar
+          Hecho con <FaHeart className="text-[#6366f1]" /> desde cualquier lugar
         </p>
       </div>
     </footer>
