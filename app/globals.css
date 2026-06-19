@@ -31,7 +31,7 @@ body {
   background: #8b5cf6;
 }
 
-/* Animación de gradiente para el hero */
+/* Gradiente animado */
 .gradient-text {
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #ec4899 100%);
   -webkit-background-clip: text;
@@ -46,7 +46,7 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-/* Efecto glassmorphism */
+/* Glassmorphism */
 .glass {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
