@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+.next/
+out/
+dist/
+
+# Archivos grandes
+*.node
+*.wasm
+
+# Variables de entorno
+.env
+.env.local
+.env*.local
+
+# Archivos del sistema
+.DS_Store
+*.log
+*.tmp
+
+# Vercel
+.vercel
